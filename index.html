@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game by HTET Myo Win</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body
+    class="bg-gray-900 flex justify-center items-center h-screen text-white"
+  >
+    <p id="high-score" class="absolute top-2 right-2 text-white">
+      High Score: 0
+    </p>
+
+    <div class="text-center">
+      <h1 class="text-3xl font-bold mb-4">🐍 Snake Game</h1>
+      <div
+        id="game-board"
+        class="grid grid-cols-20 grid-rows-20 gap-[1px] bg-gray-700 w-[400px] h-[400px]"
+      ></div>
+      <p class="mt-5">Use Arrow Keys to Move</p>
+      <div
+        class="arrow-container bg-blue-300 h-[150px] w-[150px] mt-5 relative left-[32%] rounded-lg hover:shadow-lg md:hidden lg:hidden xl:hidden"
+      >
+        <div id="arrowUp">
+          <i
+            class="fa-solid fa-arrow-up absolute top-[20%] left-[44%] text-[1.5rem]"
+          ></i>
+        </div>
+        <div id="arrowDown">
+          <i
+            class="fa-solid fa-arrow-down absolute bottom-[30%] left-[44%] text-[1.5rem]"
+          ></i>
+        </div>
+        <div id="arrowLeft">
+          <i
+            class="fa-solid fa-arrow-left absolute top-[40%] left-[20%] text-[1.5rem]"
+          ></i>
+        </div>
+        <div id="arrowRight">
+          <i
+            class="fa-solid fa-arrow-right absolute top-[40%] right-[20%] text-[1.5rem]"
+          ></i>
+        </div>
+      </div>
+
+      <p id="score" class="mt-2">Score: 0</p>
+      <button
+        class="bg-blue-500 hover:bg-sky-500 transition duration-75 ease-in-out mt-3 h-[2.5rem] w-[5.5rem] rounded-lg"
+        id="reset-btn"
+      >
+        Restart
+      </button>
+    </div>
+    <div
+      id="gameOverModal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden"
+    >
+      <div
+        class="bg-white h-[200px] w-[400px] text-black rounded-lg shadow-lg p-6 pt-5 flex justify-center items-center flex-col"
+      >
+        <h2 class="text-2xl font-bold mt-3">Game Over!</h2>
+        <p class="mt-3">Press enter to restart.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="mobileSnake.js"></script>
+  </body>
+</html>
