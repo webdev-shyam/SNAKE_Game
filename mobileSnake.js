@@ -18,9 +18,7 @@ arrowUpBtn.addEventListener("click", moveUp);
 arrowDownBtn.addEventListener("click", moveDown);
 arrowLeftBtn.addEventListener("click", moveLeft);
 arrowRightBtn.addEventListener("click", moveRight);
+
 document.querySelector("#resetMobileBtn").addEventListener("click", () => {
-  document.querySelector(
-    ".reset-description"
-  ).innerHTML = `Click restart to restart the game`;
   location.reload();
 });
