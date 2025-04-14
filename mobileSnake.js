@@ -1,7 +1,7 @@
-let arrowUpBtn = document.querySelector("#arrowUp");
-let arrowDownBtn = document.querySelector("#arrowDown");
-let arrowLeftBtn = document.querySelector("#arrowLeft");
-let arrowRightBtn = document.querySelector("#arrowRight");
+let arrowUpBtn = document.querySelector("#arrow-up");
+let arrowDownBtn = document.querySelector("#arrow-down");
+let arrowLeftBtn = document.querySelector("#arrow-left");
+let arrowRightBtn = document.querySelector("#arrow-right");
 const moveUp = () => {
   if (direction.y !== 1) direction = { x: 0, y: -1 };
 };
@@ -18,3 +18,9 @@ arrowUpBtn.addEventListener("click", moveUp);
 arrowDownBtn.addEventListener("click", moveDown);
 arrowLeftBtn.addEventListener("click", moveLeft);
 arrowRightBtn.addEventListener("click", moveRight);
+document.querySelector("#resetMobileBtn").addEventListener("click", () => {
+  document.querySelector(
+    ".reset-description"
+  ).innerHTML = `Click restart to restart the game`;
+  location.reload();
+});

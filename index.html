@@ -37,22 +37,26 @@
       >
         <div id="arrowUp">
           <i
-            class="fa-solid fa-arrow-up absolute top-[20%] left-[44%] text-[1.5rem]"
+            id="arrow-up"
+            class="fa-solid fa-arrow-up absolute top-[10%] left-[37%] text-[3rem]"
           ></i>
         </div>
         <div id="arrowDown">
           <i
-            class="fa-solid fa-arrow-down absolute bottom-[30%] left-[44%] text-[1.5rem]"
+            id="arrow-down"
+            class="fa-solid fa-arrow-down absolute bottom-[10%] left-[37%] text-[3rem]"
           ></i>
         </div>
         <div id="arrowLeft">
           <i
-            class="fa-solid fa-arrow-left absolute top-[40%] left-[20%] text-[1.5rem]"
+            id="arrow-left"
+            class="fa-solid fa-arrow-left absolute top-[33%] left-[15%] text-[3rem]"
           ></i>
         </div>
         <div id="arrowRight">
           <i
-            class="fa-solid fa-arrow-right absolute top-[40%] right-[20%] text-[1.5rem]"
+            id="arrow-right"
+            class="fa-solid fa-arrow-right absolute top-[33%] right-[15%] text-[3rem]"
           ></i>
         </div>
       </div>
@@ -73,7 +77,13 @@
         class="bg-white h-[200px] w-[400px] text-black rounded-lg shadow-lg p-6 pt-5 flex justify-center items-center flex-col"
       >
         <h2 class="text-2xl font-bold mt-3">Game Over!</h2>
-        <p class="mt-3">Press enter to restart.</p>
+        <p class="reset-description mt-3">Press enter to restart.</p>
+        <button
+          class="md:hidden lg:hidden xl:hidden bg-blue-500 hover:bg-sky-500 transition duration-75 ease-in-out mt-3 h-[2.5rem] w-[5.5rem] rounded-lg"
+          id="resetMobileBtn"
+        >
+          Restart
+        </button>
       </div>
     </div>
     <script src="script.js"></script>

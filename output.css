@@ -548,8 +548,17 @@
   .top-2 {
     top: calc(var(--spacing) * 2);
   }
+  .top-\[10\%\] {
+    top: 10%;
+  }
   .top-\[20\%\] {
     top: 20%;
+  }
+  .top-\[30\%\] {
+    top: 30%;
+  }
+  .top-\[33\%\] {
+    top: 33%;
   }
   .top-\[40\%\] {
     top: 40%;
@@ -557,11 +566,26 @@
   .right-2 {
     right: calc(var(--spacing) * 2);
   }
+  .right-\[10\%\] {
+    right: 10%;
+  }
+  .right-\[15\%\] {
+    right: 15%;
+  }
   .right-\[20\%\] {
     right: 20%;
   }
+  .bottom-\[10\%\] {
+    bottom: 10%;
+  }
   .bottom-\[30\%\] {
     bottom: 30%;
+  }
+  .left-\[10\%\] {
+    left: 10%;
+  }
+  .left-\[15\%\] {
+    left: 15%;
   }
   .left-\[20\%\] {
     left: 20%;
@@ -569,8 +593,17 @@
   .left-\[32\%\] {
     left: 32%;
   }
+  .left-\[34\%\] {
+    left: 34%;
+  }
+  .left-\[37\%\] {
+    left: 37%;
+  }
   .left-\[44\%\] {
     left: 44%;
+  }
+  .z-50 {
+    z-index: 50;
   }
   .container {
     width: 100%;
@@ -635,6 +668,9 @@
   .h-\[200px\] {
     height: 200px;
   }
+  .h-\[25px\] {
+    height: 25px;
+  }
   .h-\[400px\] {
     height: 400px;
   }
@@ -646,6 +682,9 @@
   }
   .w-\[20px\] {
     width: 20px;
+  }
+  .w-\[25px\] {
+    width: 25px;
   }
   .w-\[150px\] {
     width: 150px;
@@ -696,6 +735,9 @@
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
   .bg-gray-700 {
     background-color: var(--color-gray-700);
   }
@@ -733,6 +775,12 @@
   }
   .text-\[1\.5rem\] {
     font-size: 1.5rem;
+  }
+  .text-\[2\.5rem\] {
+    font-size: 2.5rem;
+  }
+  .text-\[3rem\] {
+    font-size: 3rem;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
